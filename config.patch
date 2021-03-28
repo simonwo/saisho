@@ -1,0 +1,13 @@
+--- /boot/config.txt	2021-03-28 11:43:59.313895600 +0100
++++ /boot/config.txt	2021-03-28 11:19:51.014555500 +0100
+@@ -37,7 +37,9 @@
+ #config_hdmi_boost=4
+ 
+ # uncomment for composite PAL
+-#sdtv_mode=2
++sdtv_mode=2
++overscan_top=-40
++overscan_bottom=-40
+ 
+ #uncomment to overclock the arm. 700 MHz is the default.
+ #arm_freq=800

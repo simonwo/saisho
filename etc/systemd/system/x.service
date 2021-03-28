@@ -1,0 +1,13 @@
+[Unit]
+Description=X
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/startx
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
