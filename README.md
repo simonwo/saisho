@@ -16,8 +16,8 @@ At your Raspberry Pi terminal, run:
     wget https://github.com/simonwo/saisho/archive/refs/heads/main.zip
     unzip main.zip
     cd saisho-main
-    make
+    sudo make
 
 If you also want the control program:
 
-    make control
+    sudo make control
