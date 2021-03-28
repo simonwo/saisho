@@ -20,6 +20,10 @@ control: x ufw
 	ufw allow 5000
 	touch $@
 
+mornings: x
+	patch /etc/crontab -i crontab.patch
+	touch $@
+
 ufw:
 	apt-get install -y ufw && \
 	ufw allow 22 && \

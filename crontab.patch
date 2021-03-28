@@ -1,0 +1,10 @@
+--- /etc/crontab	2021-03-28 12:44:17.204663200 +0100
++++ /etc/crontab	2021-03-28 12:42:51.306031600 +0100
+@@ -20,3 +20,7 @@
+ 47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+ 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+ #
++
++# Start X in the morning to look at penguins.
++00 7	* * *	root	systemctl start x
++00 10	* * *	root	systemctl stop x

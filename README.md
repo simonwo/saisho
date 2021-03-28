@@ -21,3 +21,7 @@ At your Raspberry Pi terminal, run:
 If you also want the control program:
 
     sudo make control
+
+If you also want auto start in the morning:
+
+    sudo make mornings
